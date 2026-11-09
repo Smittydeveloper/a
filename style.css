@@ -1,0 +1,76 @@
+body {
+background: radial-gradient(circle, #d8b4fe 0%, #7c3aed 100%);   
+}
+
+a {
+      display: inline-block;
+  
+    padding: 12px 24px;
+
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+ 
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 17px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #7c3aed;
+  transform: scaleX(0);
+  transition: transform 100ms ease;
+}
+.sphere {
+    color:#7c3aed;
+
+
+}
+nav a:hover::after {
+  transform: scaleX(1);
+}   
+/*nav {
+      display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 20px;
+
+
+}*/
+div {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+}
+a#rouge  { background: linear-gradient(90deg, #1e1030 30%, rgba(180, 50, 70, 0.3) 100%); }
+a#vert   { background: linear-gradient(90deg, #1a2520 30%, rgba(40, 160, 100, 0.3) 100%); }
+a#bleu   { background: linear-gradient(90deg, #151a30 30%, rgba(60, 80, 200, 0.3) 100%); }
+a#violet { background: linear-gradient(90deg, #1e1235 30%, rgba(140, 60, 220, 0.3) 100%); }       
+
+a:hover {
+    transform: scale(1.05)
+
+}
